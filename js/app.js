@@ -53,5 +53,43 @@ if(q5=='YES'||q5=='Y'){
 }else {
     alert('wrong input '+name);
 }
-
-
+var mynumber = 4
+var flag = false
+for (var i = 0; i < 4; i++) {
+    var usernumber = Number(prompt('can you guess the correct number between 1-10, pay attention that you have four chances.'))
+    if (mynumber == usernumber) {
+        flag = true
+        //console.log('correct answer');
+        alert('correct answer');
+        count++
+        break;
+    } else if (mynumber < usernumber) {
+        alert('too high,please try less than '+username);
+    } else if (mynumber > usernumber) {
+        alert('too low,please try more than '+username);
+    } else {
+        alert('please try again');
+    }
+}
+if (!flag) {
+    alert('the correct answer is ' + mynumber);
+}
+var Playgrounds = ['Camp Nou', 'the Union', 'Rome', 'Al-Hashemi', 'October'];
+var finish = false;
+var m=0;
+while (m <6) {
+    var ridable = prompt('Which stadium Barcelona club?').toLowerCase();
+    for (var k = 0; k < Playgrounds.length; k++) {
+        if (ridable == Playgrounds[k]) {
+            alert('correct answer');
+            count++
+            finish = true;
+            break;
+        }
+    }
+    if (finish)
+        break;
+alert(' u have '+5-m+' reamin')
+    m++;
+}
+alert('your score is '+count+'/7')
