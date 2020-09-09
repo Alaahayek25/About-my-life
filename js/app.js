@@ -102,24 +102,32 @@ if (!flag) {
 }
 }
 function stadium(){
-var Playgrounds = ['Camp Nou', 'the Union', 'Rome', 'Al-Hashemi', 'October'];
-var finish = false;
-var m = 0;
-while (m < 6) {
-    var ridable = prompt('Which stadium Barcelona club?').toLowerCase();
-    for (var k = 0; k < Playgrounds.length; k++) {
-        if (ridable == Playgrounds[k]) {
-            alert('correct answer');
-            count++;
-            finish = true;
-            break;
+var ridable= prompt('Which stadium Barcelona club?').toLowerCase();
+var Playgrounds = ['Camp Nou', 'the Union', 'Rome'];
+   
+      for (var k = 0; k < 6; k++) {
+        
+        if (ridable !== Playgrounds[0]&&ridable!==Playgrounds[1]&&ridable!==Playgrounds[2]) {
+
+            ridable=prompt(' you have more attempts');
+    
         }
+    else {
+        alert('correct answer');
+        k=10
+        count++;
     }
-    if (finish)
-        break;
-    alert(' u have ' + 5 - m + ' reamin');
-    m++;
+    
 }
+alert('The answer is: \n 1-' + Playgrounds[0] + '\n 2- ' + Playgrounds[1] + '\n 3-' + Playgrounds[2]);
 }
+
+major();
+company();
+restaurants();
+Canada();
+sales();
+number();
+stadium();
 
 alert('your score is ' + count + '/7');
