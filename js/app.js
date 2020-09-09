@@ -44,6 +44,7 @@ if (q3 == 'yes' || q3 == 'y') {
     alert('wrong input ' + name);
 }
 }
+function Canada(){
 var q4 = prompt('is I want travel io Canada?').toLowerCase();
 if (q4 == 'yes' || q4 == 'y') {
     //console.log('correct');
@@ -53,6 +54,7 @@ if (q4 == 'yes' || q4 == 'y') {
 }
 else {
     alert('wrong input ' + name);
+}
 }
 var q5 = prompt('I worked in sales field?').toUpperCase();
 if (q5 == 'YES' || q5 == 'Y') {
