@@ -18,7 +18,7 @@ if (q1 === 'yes' || q1 === 'y') {
     alert('wrong input ' + name);
 }
 }
-
+function company(){
 var q2 = prompt('did I work as a manager in acompany?').toLowerCase();
 if (q2 == 'yes' || q2 == 'y') {
     //console.log('sorry\worng');
@@ -29,7 +29,7 @@ if (q2 == 'yes' || q2 == 'y') {
 else {
     alert('wrong input ' + name);
 }
-
+}
 var q3 = prompt('did I work for restaurants?').toLowerCase();
 if (q3 == 'yes' || q3 == 'y') {
 
