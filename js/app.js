@@ -56,6 +56,7 @@ else {
     alert('wrong input ' + name);
 }
 }
+function sales(){
 var q5 = prompt('I worked in sales field?').toUpperCase();
 if (q5 == 'YES' || q5 == 'Y') {
     // console.log('correct')
@@ -65,6 +66,7 @@ if (q5 == 'YES' || q5 == 'Y') {
     alert('incorrect ' + name);
 } else {
     alert('wrong input ' + name);
+}
 }
 var mynumber = 4
 var flag = false
