@@ -130,4 +130,4 @@ sales();
 number();
 stadium();
 
-alert('your score is ' + count + '/7');
+alert('your score is ' + count + '/7'+ userName);
