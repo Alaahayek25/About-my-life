@@ -90,7 +90,7 @@ for (var i = 0; i < 4; i++) {
     if (mynumber == usernumber) {
         flag = true
         //console.log('correct answer');
-        alert('correct answer');
+        alert('yep correct answer');
         count++;
         break;
     } else if (mynumber < usernumber) {
@@ -114,7 +114,7 @@ var Playgrounds = ['CAMP NUE', '    THE  UNION', 'Rome'];
         if (ridable !== Playgrounds[0]&&ridable!==Playgrounds[1]&&ridable!==Playgrounds[2]) {
 
             ridable=prompt(' you have more attempts' + name);
-    
+
         }
     else {
         alert('yep correct answer' +  name);
