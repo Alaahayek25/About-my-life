@@ -4,7 +4,7 @@ var name = prompt('what is your name?');
 alert('welcome here ' + name);
 }
 
-
+function major(){
 var q1 = prompt('is my major acounting?').toLowerCase();
 if (q1 === 'yes' || q1 === 'y') {
     //console.log('correct');
@@ -16,6 +16,7 @@ if (q1 === 'yes' || q1 === 'y') {
     alert('sorry it\'s wrong ' + name);
 } else {
     alert('wrong input ' + name);
+}
 }
 
 var q2 = prompt('did I work as a manager in acompany?').toLowerCase();
