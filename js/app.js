@@ -30,6 +30,7 @@ else {
     alert('wrong input ' + name);
 }
 }
+function restaurants(){
 var q3 = prompt('did I work for restaurants?').toLowerCase();
 if (q3 == 'yes' || q3 == 'y') {
 
@@ -42,7 +43,7 @@ if (q3 == 'yes' || q3 == 'y') {
 } else {
     alert('wrong input ' + name);
 }
-
+}
 var q4 = prompt('is I want travel io Canada?').toLowerCase();
 if (q4 == 'yes' || q4 == 'y') {
     //console.log('correct');
