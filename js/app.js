@@ -101,6 +101,7 @@ if (!flag) {
     alert('the correct answer is ' + mynumber);
 }
 }
+function stadium(){
 var Playgrounds = ['Camp Nou', 'the Union', 'Rome', 'Al-Hashemi', 'October'];
 var finish = false;
 var m = 0;
@@ -118,6 +119,7 @@ while (m < 6) {
         break;
     alert(' u have ' + 5 - m + ' reamin');
     m++;
+}
 }
 
 alert('your score is ' + count + '/7');
