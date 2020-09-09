@@ -1,15 +1,17 @@
 'use instrict';
+var count=0
 function userName(){
 var name = prompt('what is your name?');
 alert('welcome here ' + name);
 }
+userName();
 
 function major(){
 var q1 = prompt('is my major acounting?').toLowerCase();
 if (q1 === 'yes' || q1 === 'y') {
     //console.log('correct');
     alert('correct ' + name);
-
+ count++;
 }
  else if (q1 === 'no' || q1 === 'n') {
     //console.log('sorry it\'s wrong');
@@ -18,6 +20,7 @@ if (q1 === 'yes' || q1 === 'y') {
     alert('wrong input ' + name);
 }
 }
+
 function company(){
 var q2 = prompt('did I work as a manager in acompany?').toLowerCase();
 if (q2 == 'yes' || q2 == 'y') {
@@ -25,17 +28,20 @@ if (q2 == 'yes' || q2 == 'y') {
     alert('sorry worng ' + name)
 } else if (q2 == 'no' || q2 == 'n') {
     alert('correct ' + name);
+    count++;
 }
 else {
     alert('wrong input ' + name);
 }
 }
+
 function restaurants(){
 var q3 = prompt('did I work for restaurants?').toLowerCase();
 if (q3 == 'yes' || q3 == 'y') {
 
     //console.log('correct');
     alert('correct ' + name);
+    count++;
 } else if (q3 == 'no' || q3 == 'n') {
 
     //console.log('sorry\worng');
@@ -44,11 +50,13 @@ if (q3 == 'yes' || q3 == 'y') {
     alert('wrong input ' + name);
 }
 }
+
 function Canada(){
 var q4 = prompt('is I want travel io Canada?').toLowerCase();
 if (q4 == 'yes' || q4 == 'y') {
     //console.log('correct');
     alert('correct ' + name);
+    count++;
 } else if (q4 == 'no' || q4 == 'n') {
     alert('sorry worng ' + name);
 }
@@ -56,11 +64,13 @@ else {
     alert('wrong input ' + name);
 }
 }
+
 function sales(){
 var q5 = prompt('I worked in sales field?').toUpperCase();
 if (q5 == 'YES' || q5 == 'Y') {
     // console.log('correct')
     alert('correct ' + name);
+    count++;
 } else if (q5 == 'NO' || q5 == 'N') {
     //console.log('incorrect');
     alert('incorrect ' + name);
@@ -68,6 +78,7 @@ if (q5 == 'YES' || q5 == 'Y') {
     alert('wrong input ' + name);
 }
 }
+function number(){
 var mynumber = 4
 var flag = false
 for (var i = 0; i < 4; i++) {
@@ -76,18 +87,19 @@ for (var i = 0; i < 4; i++) {
         flag = true
         //console.log('correct answer');
         alert('correct answer');
-        count++
+        count++;
         break;
     } else if (mynumber < usernumber) {
-        alert('too high,please try less than ' + username);
+        alert('too high,please try less than ' + usernumber);
     } else if (mynumber > usernumber) {
-        alert('too low,please try more than ' + username);
+        alert('too low,please try more than ' + usernumber);
     } else {
         alert('please try again');
     }
 }
 if (!flag) {
     alert('the correct answer is ' + mynumber);
+}
 }
 var Playgrounds = ['Camp Nou', 'the Union', 'Rome', 'Al-Hashemi', 'October'];
 var finish = false;
@@ -97,14 +109,15 @@ while (m < 6) {
     for (var k = 0; k < Playgrounds.length; k++) {
         if (ridable == Playgrounds[k]) {
             alert('correct answer');
-            count++
+            count++;
             finish = true;
             break;
         }
     }
     if (finish)
         break;
-    alert(' u have ' + 5 - m + ' reamin')
+    alert(' u have ' + 5 - m + ' reamin');
     m++;
 }
-alert('your score is ' + count + '/7')
+
+alert('your score is ' + count + '/7');
