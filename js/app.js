@@ -134,4 +134,8 @@ sales();
 number();
 stadium();
 
+<<<<<<< HEAD
 alert('your score is ' + count + '/7'+ name);
+=======
+alert('your score is ' + count + '/7'+ userName);
+>>>>>>> 438255298e92a73ffcb7da5da909b67b99de1563
