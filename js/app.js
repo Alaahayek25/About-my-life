@@ -1,5 +1,5 @@
 'use strict';
-var name;
+/*var name;
 var count=0
 function userName(){
  name = prompt('what is your name?');
@@ -11,14 +11,12 @@ userName();
 function major(){
 var q1 = prompt('is my major acounting?').toLowerCase();
 if (q1 === 'yes' || q1 === 'y') {
-    //console.log('correct'+ name);
     alert('your answer is correct ' + name);
 
  count++;
 }
 
  else if (q1 === 'no' || q1 === 'n') {
-    //console.log('sorry it\'s wrong');
     alert('sorry it\'s wrong ' + name);
 } else {
     alert(' Sorry wrong input ' + name);
@@ -28,7 +26,6 @@ if (q1 === 'yes' || q1 === 'y') {
 function company(){
 var q2 = prompt('did I work as a manager in acompany?').toLowerCase();
 if (q2 == 'yes' || q2 == 'y') {
-    //console.log('sorry\worng');
     alert('sorry worng ' + name)
 } else if (q2 == 'no' || q2 == 'n') {
     alert('your answer is correct ' + name);
@@ -43,12 +40,10 @@ function restaurants(){
 var q3 = prompt('did I work for restaurants?').toLowerCase();
 if (q3 == 'yes' || q3 == 'y') {
 
-    //console.log('correct');
     alert('good correct ' + name);
     count++;
 } else if (q3 == 'no' || q3 == 'n') {
 
-    //console.log('sorry\worng');
     alert('sorry worng ' + name);
 } else {
     alert('NO wrong input ' + name);
@@ -58,7 +53,6 @@ if (q3 == 'yes' || q3 == 'y') {
 function Canada(){
 var q4 = prompt('is I want travel io Canada?').toLowerCase();
 if (q4 == 'yes' || q4 == 'y') {
-    //console.log('correct');
     alert('yep correct ' + name);
     count++;
 } else if (q4 == 'no' || q4 == 'n') {
@@ -72,11 +66,9 @@ else {
 function sales(){
 var q5 = prompt('I worked in sales field?').toUpperCase();
 if (q5 == 'YES' || q5 == 'Y') {
-    // console.log('correct')
     alert('wow correct ' + name);
     count++;
 } else if (q5 == 'NO' || q5 == 'N') {
-    //console.log('incorrect');
     alert('incorrect ' + name);
 } else {
     alert('Sorry wrong input ' + name);
@@ -89,7 +81,6 @@ for (var i = 0; i < 4; i++) {
     var usernumber = Number(prompt('can you guess the correct number between 1-10, pay attention that you have four chances.'))
     if (mynumber == usernumber) {
         flag = true
-        //console.log('correct answer');
         alert('yep correct answer');
         count++;
         break;
@@ -107,7 +98,7 @@ if (!flag) {
 }
 function stadium(){
 var ridable= prompt('Which stadium Barcelona club?').toUpperCase();
-var Playgrounds = ['CAMP NUE', '    THE  UNION', 'Rome'];
+var Playgrounds = ['CAMP NUE','THE  UNION', 'ROME'];
    
       for (var k = 0; k < 6; k++) {
         
@@ -120,12 +111,10 @@ var Playgrounds = ['CAMP NUE', '    THE  UNION', 'Rome'];
         alert('yep correct answer' +  name);
         k=10
         count++;
-    }
-    
+    } 
 }
 alert('The answer is: \n 1-' + Playgrounds[0] + '\n 2- ' + Playgrounds[1] + '\n 3-' + Playgrounds[2]);
 }
-
 major();
 company();
 restaurants();
@@ -134,8 +123,5 @@ sales();
 number();
 stadium();
 
-<<<<<<< HEAD
-alert('your score is ' + count + '/7'+ name);
-=======
-alert('your score is ' + count + '/7'+ userName);
->>>>>>> 438255298e92a73ffcb7da5da909b67b99de1563
+ alert('your score is ' + count + '/7'+ name);
+
