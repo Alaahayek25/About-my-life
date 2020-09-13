@@ -1,13 +1,4 @@
-/* h1{
-    color:rgb(21, 148, 221);
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: x-large;
-    
-    
-    
 
-} */
 h1{
 
 text-align: center;
@@ -97,7 +88,4 @@ ol{
 .a {
     text-decoration: none;
     margin-left: -15px;
-}
-/*.topten{
-    margin-top: 30px;
 }
