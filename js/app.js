@@ -1,5 +1,5 @@
 'use strict';
-/*var name;
+var name;
 var count=0
 function userName(){
  name = prompt('what is your name?');
